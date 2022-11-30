@@ -1,0 +1,21 @@
+
+.destaque{
+    font-size: medium;
+    color: black;
+    text-align: center;
+}
+
+.footer{
+    margin-top: 10px;
+    background: #6c757d;
+    color: black;
+}
+
+.footer_area{
+    padding: 20px;
+    text-align: center  ;
+}
+
+.fonte-detalhes{
+    text-align: center;
+}

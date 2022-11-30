@@ -1,0 +1,20 @@
+/* Color Theme Swatches in Hex */
+.font_cinzaclaro { color: #979999; }
+.font_cinzaescuro { color: #585959; }
+.font_branco1 { color: #D7D9D9; }
+.font_branco2 { color: #E3E6E6; }
+.font_branco3 { color: #BDBFBF; }
+
+/* Color Theme Swatches in RGBA */
+.bg_cinzaclaro { color: rgba(151, 153, 153, 1); }
+.bg_cinzaescuro { color: rgba(88, 89, 89, 1); }
+.bg_branco1 { color: rgba(215, 217, 217, 1); }
+.bg_branco2  { color: rgba(227, 230, 230, 1); }
+.bg_branco3  { color: rgba(189, 191, 191, 1); }
+
+/* Color Theme Swatches in HSLA */
+.TechGames_2-1-hsla { color: hsla(180, 0, 59, 1); }
+.TechGames_2-2-hsla { color: hsla(180, 0, 34, 1); }
+.TechGames_2-3-hsla { color: hsla(180, 2, 84, 1); }
+.TechGames_2-4-hsla { color: hsla(180, 5, 89, 1); }
+.TechGames_2-5-hsla { color: hsla(180, 1, 74, 1); }
