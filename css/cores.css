@@ -1,4 +1,10 @@
 /* Color Theme Swatches in Hex */
+
+a{
+    text-decoration: none;
+    color: cornsilk;
+}
+
 .font_cinzaclaro { color: #979999; }
 .font_cinzaescuro { color: #585959; }
 .font_branco1 { color: #D7D9D9; }

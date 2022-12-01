@@ -1,43 +1,18 @@
-const details = localStorage.getItem('id');
 
-fetch(`https://rawg.io/api/games/${details}?token=da20b07b8c954723a7a143c644b237fe`)
+const idEncontrado = buscarIdUrl();
 
-    .then((res) => res.json())
-    .then(data => {
+const container = document.querySelector('#container-detalhes');
 
-        let str = ''
+fetch(`${base_api}/games/${idEncontrado}?key=${api_key}`)
+    .then(res => res.json())
+    .then(informacao => {
 
-        const { name, backgroung_image, rating, description } = data;
-        str = `
-        <h1 id="        
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                <img src="..." class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
-                </div>
-            </div>
-            </div>
-                
-            `
+        const { background_image,
+            background_image_additional,
+            description,
+            name } = informacao;
 
+        detalhesGameTemplate(container, name, background_image, background_image_additional, description);
     })
+    .catch(erro => console.log(erro));
 
-
-
-
-
-
-
-
-
-
-
-
-
-    `
